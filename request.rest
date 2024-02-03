@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
 	"name": "Gabriel",
-	"email": "gedev@mail.com"
+	"email": "gabriel@mail.com"
 }
 
 ###
@@ -12,7 +12,17 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-	"title": "Movie Teste",
+	"title": "Movie Testes",
 	"duration": 50000,
 	"release_date": "2024-02-03T17:13:07.783+00:00"
+}
+
+###
+
+POST http://localhost:3000/movieRend
+Content-Type: application/json
+
+{
+	"userId": "8e4dd528-7cb5-4e9c-802f-723e11dd481f",
+	"movieId": "62db3bd1-2d91-45fb-855f-7f4fcf1ca5a1"
 }
