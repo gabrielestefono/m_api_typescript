@@ -6,3 +6,13 @@ Content-Type: application/json
 	"email": "gedev@mail.com"
 }
 
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+	"title": "Movie Teste",
+	"duration": 50000,
+	"release_date": "2024-02-03T17:13:07.783+00:00"
+}
