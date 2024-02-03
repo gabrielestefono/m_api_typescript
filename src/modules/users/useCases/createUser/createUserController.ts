@@ -7,8 +7,12 @@ export class CreateUserController{
 
 		const createUserUseCase = new CreateUserUseCase();
 
-		const result = await createUserUseCase.execute({name, email});
+		try {
+			const result = await createUserUseCase.execute({name, email});
+			return res.status(201).json(result);
+		} catch (error) {
+			return res.status(400).json({error: error});
+		}
 
-		return res.status(201).json(result);
 	}
 }
